@@ -10,7 +10,7 @@
     font-family: 'poppins', sans-serif;
     font-weight: bold;
 }
-.hero{
+.html{
     background: black;
     width: 100%;
     min-height: 100vh;
@@ -214,3 +214,10 @@
         font-size: 200%;
     }
     }
+@media(max-width: 600px){
+    .header .bars{
+        font-size: 5em;
+        display: inline;
+        padding-left: 3em;
+    }
+}
