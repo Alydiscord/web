@@ -16,6 +16,7 @@ body, html {
   color: #777;
   line-height: 1.8;
   background-color: black;
+  user-select: none;
 }
 
 /* Create a Parallax Effect */
@@ -28,7 +29,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-color: black;
+  background-image: url(/public/img/Trailer.gif);
   min-height: 100%;
 }
 
@@ -47,6 +48,23 @@ body, html {
     content: none;
   }
 }
+.dwn_btn {
+  background-color: #1e90ff;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  user-select: none;
+  
+}
+.dwn_btn:hover{
+  background-color: #116fcd;
+}
+.disabled{
+
+}
 </style>
 </head>
 <body>
@@ -62,14 +80,14 @@ body, html {
     <a href="#download" class="w3-download w3-button w3-hide-small"><i class="fa fa-download"></i> DOWNLOAD</a>
     <a onclick="toWhite()" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
         <i class="fa fa-download"></i>
-    </a>
+        
+    </a>  
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#info" class="w3-bar-item w3-button" onclick="toggleFunction()">INFO</a>
     <a href="#download" class="w3-download w3-button" onclick="toggleFunction()">DOWNLOAD</a>
-    <a href="#" class="w3-bar-item w3-button">DOWNLOAD</a>
   </div>
 </div>
 
@@ -83,24 +101,7 @@ body, html {
 
 
 
-<!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
-  </div>
-</div> -->
+
 
 <!-- Second Parallax Image with Portfolio Text -->
 
@@ -123,14 +124,32 @@ body, html {
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="info">
   <h3 class="w3-center">Informtion on Fnaf1MM</h3>
-  <p class="w3-center"><em>Fnaf1MM means Five Night At Freddys 1 Minecraft Multiplayer</em></p>
+  <p class="w3-center"><em>Fnaf1MM means Five Night At Freddys 1 Minecraft Multiplayer
+    Fnaf series made by Scott Cawthong
+  </em></p>
   <p>This is Fnaf1 recreation but it can playd by 2-5 players by 1 player is the night guard and 1-4 players can play the animatronics in one minecraft world.
   This world is not relased yet because the team is only one member so it can be a long time.
   but it will be released this year.
+    Five night at freddys is made by Scott Cawthon
+
+  
+
+
+  
   </p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>N1ghtm</b></p><br>
+      <p>
+
+
+
+
+
+
+
+
+      </p>
       <!-- <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333"> -->
     </div>
 
@@ -140,10 +159,14 @@ body, html {
     </div>
   </div>
 
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16" id="download">
+    <a class="dwn_btn"><i class="fa fa-download"  disabled="true" editable="true"></i> Download</a>
+    
+  </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="/" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity" onclick="face"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -190,7 +213,11 @@ function toWhite(){
 function face(){
   location="https://google.com"
 }
+function nofile(){
+  alert("It is not completed!");
+}
 </script>
+
 
 </body>
 </html>
