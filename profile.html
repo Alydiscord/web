@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="public/img/logo.PNG" type="image/x-icon">
 </head>
 <body>
-    
+    <input type="text" value="nice" id="discord" style="opacity: 0;">
     <div class="container">
         <button class="call"><i class="fa-solid fa-square-share-nodes fa-beat-fade"></i></button>
         <div class="card">
@@ -42,7 +42,7 @@
                 <i class="fa-brands fa-twitter top"></i>
                 <i class="fa-brands fa-twitter bottom"></i>
             </div>
-            <div class="icon">
+            <div class="icon" onclick="ytl()">
                 <i class="fa-brands fa-youtube front"></i>
                 <i class="fa-brands fa-youtube back"></i>
                 <i class="fa-brands fa-youtube left"></i>
@@ -50,12 +50,12 @@
                 <i class="fa-brands fa-youtube top"></i>
                 <i class="fa-brands fa-youtube bottom"></i>
             </div>
-            <div class="icon">
-                <i class="fa-brands fa-discord front"></i>
-                <i class="fa-brands fa-discord back"></i>
-                <i class="fa-brands fa-discord left"></i>
-                <i class="fa-brands fa-discord right"></i>
-                <i class="fa-brands fa-discord top"></i>
+            <div class="icon" onclick="discordl()">
+                <i class="fa-brands fa-discord front" ></i>
+                <i class="fa-brands fa-discord back" ></i>
+                <i class="fa-brands fa-discord left" ></i>
+                <i class="fa-brands fa-discord right" ></i>
+                <i class="fa-brands fa-discord top" ></i>
                 <i class="fa-brands fa-discord bottom"></i>
             </div>
             <div class="icon">
@@ -68,6 +68,13 @@
             </div>
         </div>
     </div>
-
+<script>
+    function discordl() {
+    location="https://dc.aly.hu";
+}
+    function ytl(){
+        location="https://www.youtube.com/@n1ghtm984";
+    }
+</script>
 </body>
 </html>
