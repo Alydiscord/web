@@ -26,12 +26,12 @@ function onClick(element) {
           x.className = x.className.replace(" w3-show", "");
       }
   }
-  function toWhite(){
+function toWhite(){
       var bg = document.getElementById
   }
-  function face(){
+function face(){
     location="https://google.com"
   }
-  function nofile(){
+function nofile(){
     alert("It is not completed!");
   }
